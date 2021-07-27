@@ -1,9 +1,8 @@
 # Exploration_task
 
 ## Task:-
-
-### 1- Understanding of Deltalake
-### 2- How Deltalake and Apache Spark work together
+1- Understanding of Deltalake
+2- How Deltalake and Apache Spark work together
 
 
 ## Understanding of Deltalake
