@@ -1,6 +1,7 @@
 # Exploration_task
 
-**Task:-**
+##Task:-
+
 **1- Understanding of Deltalake**
 **2- How Deltalake and Apache Spark work together**
 
@@ -23,7 +24,7 @@ Follow these instructions to set up Delta Lake with Spark. You can run the steps
 2.	Run as a project: Set up a Maven or SBT project (Scala or Java) with Delta Lake, copy the code snippets into a source file, and run the project.
 
 
-**Key Features:**
+##Key Features:
 
 Below are some of the key features:
 1.	**ACID transactions on Spark** : In a typical Data lake, a lot of users would be accessing ie Reading and writing the data in it and it is really important that the data integrity is maintained. ACID is key feature in majority of the databases but when it comes to HDFS or S3 generally it is very hard to give the same durability gaurantees that ACID databases provide us. Delta Lake stores a transaction log to keep track of all the commits made to the table directory to provide ACID transactions.It provides Serializable isolation levels to ensure the data consistent across multiple users.
