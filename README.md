@@ -2,7 +2,7 @@
 
 **Task:-
 Understanding of Deltalake
-How Deltalake and Apache Spark work together
+How Deltalake and Apache Spark work together**
 
 
 ## Understanding of Deltalake
@@ -24,11 +24,14 @@ Follow these instructions to set up Delta Lake with Spark. You can run the steps
 
 
 **Key Features:
-Below are some of the key features:
+Below are some of the key features:**
 1.	**ACID transactions on Spark** : In a typical Data lake, a lot of users would be accessing ie Reading and writing the data in it and it is really important that the data integrity is maintained. ACID is key feature in majority of the databases but when it comes to HDFS or S3 generally it is very hard to give the same durability gaurantees that ACID databases provide us. Delta Lake stores a transaction log to keep track of all the commits made to the table directory to provide ACID transactions.It provides Serializable isolation levels to ensure the data consistent across multiple users.
 2.	**Unified Batch and Stream Processing**: In a Data lake, if we have an use case of both Stream processing and Batch processing it is normal to follow Lamdba architecture. In Data lake, data coming in as Stream (maybe from kafka) or any historical data you have (say HDFS) is the same table.It gives an unified view of both these 2 different paradigms.Streaming data ingest, batch historic backfill, and interactive queries work just out of the box without much of the extra effort.
 3.  **Schema Enforcement**: Data Lake helps to avoid bad data getting your data lakes by providing the ability to specify the schema and help enforce it.It prevents data corruption by preventing the bad data get into the system even before the data is ingested into the data lake by giving sensible error messages.
 4.	**Time Travel** : Data in the data lake will be versioned and snapshots are provided so that you can query them as if that snapshot was the current state of the system. This helps us to revert to older versions of our data lake for Audits, rollbacks and stuff like that.
 
 
-
+**References**
+1. https://databricks.com/discover/getting-started-with-delta-lake-tech-talks/making-apache-spark-better-with-delta-lake
+2. https://databricks.com/product/delta-lake-on-databricks
+3. https://datafloq.com/read/understand-the-fundamentals-of-delta-lake-concept/7610
