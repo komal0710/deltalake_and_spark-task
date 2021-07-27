@@ -1,8 +1,8 @@
 # Exploration_task
 
 **Task:-**
-**Understanding of Deltalake**
-**How Deltalake and Apache Spark work together**
+**1- Understanding of Deltalake**
+**2- How Deltalake and Apache Spark work together**
 
 
 ## Understanding of Deltalake
@@ -24,6 +24,7 @@ Follow these instructions to set up Delta Lake with Spark. You can run the steps
 
 
 **Key Features:**
+
 Below are some of the key features:
 1.	**ACID transactions on Spark** : In a typical Data lake, a lot of users would be accessing ie Reading and writing the data in it and it is really important that the data integrity is maintained. ACID is key feature in majority of the databases but when it comes to HDFS or S3 generally it is very hard to give the same durability gaurantees that ACID databases provide us. Delta Lake stores a transaction log to keep track of all the commits made to the table directory to provide ACID transactions.It provides Serializable isolation levels to ensure the data consistent across multiple users.
 2.	**Unified Batch and Stream Processing**: In a Data lake, if we have an use case of both Stream processing and Batch processing it is normal to follow Lamdba architecture. In Data lake, data coming in as Stream (maybe from kafka) or any historical data you have (say HDFS) is the same table.It gives an unified view of both these 2 different paradigms.Streaming data ingest, batch historic backfill, and interactive queries work just out of the box without much of the extra effort.
